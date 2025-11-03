@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arnulfo Cabanela— UX/UI Designer</title>
+  <meta name="description" content="Resume — Arnulfo Cabanela, UX/UI Designer" />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#9b5cf6;
+      --muted:#9aa6b2;
+      --text:#e6eef8;
+      --card-padding:22px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg) 0%, #071127 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+
+    .resume{
+      width:900px;
+      max-width:95vw;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:24px;
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+      box-shadow: 0 10px 30px rgba(5,8,15,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+
+    header{
+      grid-column: 1 / -1;
+      display:flex;
+      align-items:center;
+      gap:18px;
+      border-bottom:1px dashed rgba(255,255,255,0.04);
+      padding-bottom:18px;
+      margin-bottom:6px;
+    }
+    .avatar{
+      width:86px;height:86px;border-radius:12px;flex:0 0 86px;
+      background:linear-gradient(135deg,var(--accent), #6ee7b7);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#041025;font-size:30px;
+    }
+    .name-wrap h1{margin:0;font-size:22px;letter-spacing:-0.2px}
+    .name-wrap p{margin:4px 0 0 0;color:var(--muted);font-size:13px}
+
+    .main{
+      background:transparent;padding:0 6px 6px 6px;min-height:160px;
+    }
+    h2.section-title{font-size:15px;margin:12px 0 6px 0;color:var(--accent)}
+    p.lead{margin:0;color:var(--muted);line-height:1.45}
+
+    .experience, .projects, .education{margin-top:8px}
+    .item{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent); padding:12px;border-radius:10px;margin-bottom:10px}
+    .item h3{margin:0;font-size:15px}
+    .meta{font-size:13px;color:var(--muted);margin-top:6px}
+    .item p{margin:8px 0 0 0;color:#dbe8f6;font-size:14px}
+
+    aside{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      padding:var(--card-padding);border-radius:10px;min-height:220px;position:relative;
+    }
+    .contact a{display:block;color:var(--text);text-decoration:none;margin-bottom:6px;font-size:14px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+    .tools-list{margin-top:8px}
+    .tools-list li{margin-bottom:6px;color:var(--muted);font-size:13px}
+
+    footer.print-note{grid-column:1/-1;margin-top:6px;color:var(--muted);font-size:13px}
+
+    @media print{
+      body{background:white;color:black;padding:0}
+      .resume{box-shadow:none;border-radius:0;width:100%;grid-template-columns: 1fr 300px}
+    }
+
+    @media (max-width:880px){
+      .resume{grid-template-columns:1fr;}
+      aside{order:2}
+    }
+
+    a.portfolio{color:var(--accent);text-decoration:none;font-weight:600}
+    .pill{display:inline-block;padding:4px 8px;border-radius:999px;background:rgba(155,92,246,0.12);color:var(--accent);font-size:12px}
+
+  </style>
+</head>
+<body>
+  <main class="resume" role="main">
+
+    <header>
+      <div class="avatar" aria-hidden="true">AC</div>
+      <div class="name-wrap">
+        <h1>Arnulfo Cabanela<span style="font-weight:400;color:var(--muted);font-size:14px">— UX / UI Designer</span></h1>
+        <p>Designing clear, delightful digital experiences. Specializes in research-driven interfaces, accessible UI systems, and rapid prototyping.</p>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div class="pill">Open to freelance & full-time</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:8px">Location — Camarines Norte, Bicol, Philippines</div>
+      </div>
+    </header>
+
+    <section class="main" aria-label="main content">
+
+      <section class="summary">
+        <h2 class="section-title">Summary</h2>
+        <p class="lead">Product-focused UX/UI designer with 5+ years of experience building web and mobile interfaces. I blend user research, interaction design, and visual systems to deliver measurable improvements in task completion and user satisfaction.</p>
+      </section>
+
+      <section class="experience" aria-labelledby="exp">
+        <h2 id="exp" class="section-title">Experience</h2>
+
+        <article class="item" aria-label="Senior Product Designer at NeoBank">
+          <h3>Senior Product Designer</h3>
+          <div class="meta">May 2024</div>
+          <p>Led end-to-end design for savings & budgeting features used by 340k+ customers. Conducted mixed-methods research, built prototypes in Figma, and collaborated with engineers to ship a redesigned onboarding flow that increased activation by 21%.</p>
+        </article>
+
+        <article class="item">
+          <h3>Product Designer</h3>
+          <div class="meta">July 2023 · Remote</div>
+          <p>Owned checkout and product discovery experiences. Ran A/B tests and usability studies; created a reusable component library that reduced UI development time by ~30%.</p>
+        </article>
+
+      </section>
+
+      <section class="projects" aria-labelledby="proj">
+        <h2 id="proj" class="section-title">Selected Projects</h2>
+
+        <div class="item">
+          <h3>Accessible Checkout Redesign</h3>
+          <div class="meta">Tools: Figma, HTML/CSS, Lighthouse — Outcome: 18% drop in checkout abandonment</div>
+          <p>Improved form accessibility, progressive disclosure of payment options, and live validation patterns to reduce errors and cognitive load.</p>
+        </div>
+
+        <div class="item">
+          <h3>Micro-Savings Feature</h3>
+          <div class="meta">Tools: FigJam, Miro, ProtoPie — Outcome: 21% increase in weekly active users</div>
+          <p>Designed a micro-savings experience with gamified milestones; validated flows through guerrilla testing and iterated based on analytics.</p>
+        </div>
+
+      </section>
+
+      <section class="education" aria-labelledby="edu">
+        <h2 id="edu" class="section-title">Education</h2>
+        <div class="item">
+          <h3>B.S. in Information Systems — University of Camarines Norte</h3>
+          <div class="meta">2023</div>
+        </div>
+      </section>
+
+    </section>
+
+    <aside aria-label="sidebar">
+      <div class="contact">
+        <h2 class="section-title">Contact</h2>
+        <a href="cabanelaarnulfo7@gmail.com">cabanelaarnulfo7@gmail.com</a>
+        <a href="https://www.facebook.com/arnulfo.cabanelaii" class="portfolio" target="_blank" rel="noopener">Official Account Facebook</a>
+        <a href="https://www.instagram.com/liebe_accc?igsh=MWRuOHY2cWl6M20zeA==" target="_blank" rel="noopener">Instagram</a>
+        <a href="tel:+639703086645">+63 970 308 8645</a>
+      </div>
+
+      <div style="margin-top:14px">
+        <h2 class="section-title">Core Skills</h2>
+        <div class="skill-list" role="list">
+          <div class="skill">User Research</div>
+          <div class="skill">Interaction Design</div>
+          <div class="skill">Visual Design</div>
+          <div class="skill">Prototyping</div>
+          <div class="skill">Wireframing</div>
+          <div class="skill">Design Systems</div>
+          <div class="skill">Accessibility (a11y)</div>
+          <div class="skill">UX Writing</div>
+        </div>
+      </div>
+
+      <div style="margin-top:14px">
+        <h2 class="section-title">Tools</h2>
+        <ul class="tools-list">
+          <li>Figma · FigJam</li>
+          <li>Sketch · Adobe XD</li>
+          <li>ProtoPie · Framer</li>
+          <li>HTML · CSS · JS (basic)</li>
+          <li>Hotjar · Amplitude</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:14px">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="tools-list">
+          <li>Certified UX Researcher — NN/g</li>
+          <li>Interaction Design Specialization — Coursera</li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <footer class="print-note">Tip: Use your browser's print dialog to save as PDF. Adjust margins to "None" / "Minimal" for best results.</footer>
+
+  </main>
+</body>
+</html>
